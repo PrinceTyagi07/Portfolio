@@ -1,0 +1,33 @@
+.header{
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+.bg-navbar{
+    background-color: ghostwhite;
+}
+
+.nav_link{
+    /* margin: 0px 10px; */
+    color: black;
+}
+
+link{
+    /* margin: 0px 15px; */
+    color: gray;
+}
+
+/* .font-style{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width:992px) {
+    .nav_link{
+        margin: 0px;
+    }
+}

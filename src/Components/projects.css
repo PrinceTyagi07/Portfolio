@@ -1,0 +1,48 @@
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list-style{
+    list-style: none;
+}
+
+.projectImage{
+    height: 200px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.project-col{
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.project-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.viewbtn{
+    height: 35px;
+}
+
+.project-content{
+    cursor: pointer;
+}
+
+.project-active{
+    background-color: #484e53;
+    color: white;
+    border-radius: 25px;
+    padding: 2px 20px;
+}

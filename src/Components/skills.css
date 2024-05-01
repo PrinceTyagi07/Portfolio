@@ -1,0 +1,14 @@
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .skill-items{
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    width: 450px;
+    border-radius: 15px;
+ }

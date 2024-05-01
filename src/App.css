@@ -1,0 +1,13 @@
+.main {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Optionally, use media queries to apply specific styles for mobile screens */
+@media (max-width: 767px) {
+    /* Example: Adjust padding or margins for smaller screens */
+    .main {
+        padding: 20px;
+    }
+}

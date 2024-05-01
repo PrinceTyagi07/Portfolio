@@ -1,0 +1,120 @@
+.qualification-container{
+    max-width: 768px;
+}
+
+.qualification-section{
+    /* margin-top: 200px !important; */
+}
+
+.qualification-button{
+    font-size: 17px;
+}
+
+.qualification-tabs{
+    display: flex;
+    justify-content: center;
+}
+
+.qualification-button{
+    cursor: pointer;
+    
+}
+
+.qualification-icon{
+    font-size: 1.6rem;
+}
+
+.qualification-active{
+    background-color: #484e53;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 2px 10px;
+}
+
+.qualification-sections{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.5fr;
+}
+
+.qualification-content{
+    display: none;
+}
+
+.qualification-content-active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualification-data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification-title{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.qualification-subtitle{
+    display: inline-block;
+    font-style: italic;
+    font-weight: 500;
+    
+}
+
+.qualification-calendar{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.calendar-icon{
+    font-size: 1.4rem;
+}
+
+.qualification-rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.qualification-line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    transform: translate(6px,-7px);
+}
+@media screen  and (max-width:992px) {
+    .qualification-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen  and (max-width:768px) {
+    .qualification-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen  and (max-width:576px) {
+    .qualification-sections{
+       grid-template-columns: initial;
+    }
+}
+
+
+@media screen  and (max-width:350px) {
+    .qualification-data{
+       gap: 0.5rem;
+    }
+}
