@@ -12,7 +12,7 @@ function Skills() {
       <div className="container">
         <Row className='d-flex justify-content-center'>
             
-                <Col lg={5} md={6} sm={12} className='skill-items shadow p-3 m-2' data-aos="flip-right" data-aos-easing="linear" data-aos-duration="2500">
+                <Col lg={5} md={6} sm={12} className='skill-items shadow p-3 m-2' data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1500">
                   <h4 className='fw-bold text-dark'>Frontend Developer</h4>
                   <div>
                       <Row className='my-1'>
@@ -46,7 +46,7 @@ function Skills() {
                   </div>
                 </Col>
 
-                <Col lg={5} md={6} sm={12} className='skill-items shadow p-3 m-2' data-aos="flip-left" data-aos-easing="linear" data-aos-duration="2500">
+                <Col lg={5} md={6} sm={12} className='skill-items shadow p-3 m-2' data-aos="flip-left" data-aos-easing="linear" data-aos-duration="1500">
                   <h4 className='fw-bold text-dark'>Backend Developer</h4>
                   <div>
                       <Row className='my-1'>
