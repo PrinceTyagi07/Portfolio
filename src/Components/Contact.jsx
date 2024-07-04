@@ -44,7 +44,7 @@ function Contact() {
                 <i class="uil uil-envelope-minus"></i>
                 <p>Email</p>
                 <p>princetyagi1901@gmail.com</p>
-                <a href="mailto:ashishsamuelthomson@gmail.com?subject = Connection Message&body = Message to connect" className='text-dark' style={{textDecoration:'none'}}><button className='btn btn-dark'>Write Me<i class="uil uil-arrow-right"></i></button></a>
+                <a href="mailto:princetyagi1901@gmail.com?subject = Connection Message&body = Message to connect" className='text-dark' style={{textDecoration:'none'}}><button className='btn btn-dark'>Write Me<i class="uil uil-arrow-right"></i></button></a>
                 </div>
 
             </Col>

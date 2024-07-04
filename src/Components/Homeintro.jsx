@@ -25,7 +25,7 @@ enhance user experience and drive engagement using React JS.
 Entry-level individual skilled in Node.js and MongoDB.
 </p>
 
-<a href="mailto:ashishsamuelthomson@gmail.com?subject = Hello Message&body = Message to say hello" className='text-dark' style={{textDecoration:'none'}}><button className='btn btn-dark hello-btn'>Say Hello</button></a>
+<a href="mailto:princetyagi1901@gmail.com?subject = Hello Message&body = Message to say hello" className='text-dark' style={{textDecoration:'none'}}><button className='btn btn-dark hello-btn'>Say Hello</button></a>
                 </div>
         </div>
         </Col>
