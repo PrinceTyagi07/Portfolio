@@ -131,7 +131,7 @@ function Projects() {
 
       <Row className='justify-content-center'>
         {projectList.length>0? projectList.map(project=>(
-          <Col lg={4} md={6} sm={12} className='my-3' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
+          <Col lg={4} md={6} sm={12} className='my-3' data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
             <div className='shadow project-col'>
               <img className='projectImage img-fuild shadow' src={project.image} alt="js age calculator" />
               <div className='px-4'>
