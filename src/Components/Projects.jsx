@@ -11,7 +11,7 @@ function Projects() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [projectList,setProjectList] = useState([
-    {image:'images/jscalculator.png',title:'Calculator Application',overview:"Calculator application developed using JavaScript that can perform basic arithmetic operations like addition, subtraction, multiplication and division",github:"https://github.com/ashishsamuel/calculator",livelink:"https://calculator141.netlify.app/",languages:"HTML, CSS, TailwindCSS, JavaScript"},
+    {image:'images/jscalculator.png',title:'Calculator Application',overview:"Calculator application developed using JavaScript that can perform basic arithmetic operations like addition, subtraction, multiplication and division",github:"https://github.com/PrinceTyagi07/Webdevelopment/tree/main/web_projects/basic_projects/Calculator_08",livelink:"https://calculator1901.netlify.app/",languages:"HTML, CSS, TailwindCSS, JavaScript"},
 
     {image:'images/jsweather.png',title:'Weather Prediction Application',overview:"Weather Prediction application developed using JavaScript that displays the country, humidity, wind, pressure of the city provided by the user",github:"https://github.com/ashishsamuel/weatherjsapp",livelink:"https://weathercheck1478.netlify.app/",languages:"HTML, CSS, TailwindCSS, JavaScript"},
 
