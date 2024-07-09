@@ -1,17 +1,16 @@
 /* src/components/MouseFollower.css */
 
-.mouse-follower {
+#minicircle {
     position: fixed;
     width: 15px;
     height: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #ffffff;
     border-radius: 50%;
     pointer-events: none;
-    transition: transform 1s ease;
-    /* Increased transition duration */
-    transform: translate(50%,10%);
+    transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate(-50%, -50%);
     z-index: 9999;
-    box-shadow: 0 0 10px rgba(223, 9, 9, 0.2);
-    mix-blend-mode: multiply; /* Add blend mode */
-
-}
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    mix-blend-mode: difference;
+  }
+  
