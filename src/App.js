@@ -12,6 +12,7 @@ import Skills from './Components/Skills';
 import './bootstrap.min.css'
 import AOS from "aos";
 import './App.css'
+import MouseFollower from './Components/MouseFollower';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
     <>
       <Header/>
       <main className='main'>
+       <MouseFollower />
         <Homeintro/>
         <About/>
         <Skills/>
