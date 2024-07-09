@@ -1,8 +1,5 @@
-// src/components/MouseFollower.js
-
 import React, { useEffect, useState, useRef } from 'react';
 import { gsap } from 'gsap';
-import { Expo, Power3 } from 'gsap/all';
 import LocomotiveScroll from 'locomotive-scroll';
 import './MouseFollower.css';
 
@@ -13,10 +10,32 @@ const MouseFollower = () => {
   const [yprev, setYprev] = useState(0);
   const timeoutRef = useRef(null);
   const minicircleRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
+
+    const mainElement = document.querySelector("#main");
+
+    if (!mainElement) {
+      console.error("#main element not found.");
+      return;
+    }
+
     const scroll = new LocomotiveScroll({
-      el: document.querySelector("#main"),
+      el: mainElement,
       smooth: true,
     });
 
@@ -34,55 +53,36 @@ const MouseFollower = () => {
       circleMouseFollower(newXscale, newYscale, dets.clientX, dets.clientY);
 
       timeoutRef.current = setTimeout(() => {
-        minicircleRef.current.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
-      }, 100);
+        if (minicircleRef.current) {
+          minicircleRef.current.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
+        }
+      }, 50);
+    };
+
+    const circleMouseFollower = (xscale, yscale, clientX, clientY) => {
+      if (minicircleRef.current) {
+        minicircleRef.current.style.transform = `translate(${clientX}px, ${clientY}px) scale(${xscale}, ${yscale})`;
+      }
     };
 
     window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      if (scroll.destroy) {
+        scroll.destroy();
+      }
     };
-  }, [xprev, yprev]);
+  }, [xprev, yprev, isMobile]);
 
-  const circleMouseFollower = (xscale, yscale, clientX, clientY) => {
-    minicircleRef.current.style.transform = `translate(${clientX}px, ${clientY}px) scale(${xscale}, ${yscale})`;
-  };
-
-  // useEffect(() => {
-  //   document.querySelectorAll(".elem").forEach((elem) => {
-  //     let rotate = 0;
-  //     let diffrot = 0;
-
-  //     elem.addEventListener("mouseleave", () => {
-  //       gsap.to(elem.querySelector("img"), {
-  //         opacity: 0,
-  //         ease: Power3,
-  //         duration: 0.5,
-  //       });
-  //     });
-
-  //     elem.addEventListener("mousemove", (dets) => {
-  //       const diff = dets.clientY - elem.getBoundingClientRect().top;
-  //       diffrot = dets.clientX - rotate;
-  //       rotate = dets.clientX;
-  //       gsap.to(elem.querySelector("img"), {
-  //         opacity: 1,
-  //         ease: Power3,
-  //         top: diff,
-  //         left: dets.clientX,
-  //         rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
-  //       });
-  //     });
-  //   });
-  // }, []);
+  if (isMobile) return null;
 
   return (
     <div>
       <div id="minicircle" ref={minicircleRef}></div>
-      {/* Rest of your elements */}
       <div id="main">
         <div className="elem">
+          {/* Your content */}
         </div>
       </div>
     </div>
