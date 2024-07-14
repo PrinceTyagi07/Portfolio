@@ -34,10 +34,7 @@ const MouseFollower = () => {
       return;
     }
 
-    const scroll = new LocomotiveScroll({
-      el: mainElement,
-      smooth: true,
-    });
+   
 
     const handleMouseMove = (dets) => {
       clearTimeout(timeoutRef.current);
@@ -61,7 +58,7 @@ const MouseFollower = () => {
 
     const circleMouseFollower = (xscale, yscale, clientX, clientY) => {
       if (minicircleRef.current) {
-        minicircleRef.current.style.transform = `translate(${clientX}px, ${clientY}px) scale(${xscale}, ${yscale})`;
+        minicircleRef.current.style.transform =` translate(${clientX}px, ${clientY}px) scale(${xscale}, ${yscale})`;
       }
     };
 
@@ -69,9 +66,9 @@ const MouseFollower = () => {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      if (scroll.destroy) {
-        scroll.destroy();
-      }
+      // if (scroll.destroy) {
+      //   scroll.destroy();
+      // }
     };
   }, [xprev, yprev, isMobile]);
 
@@ -81,9 +78,6 @@ const MouseFollower = () => {
     <div>
       <div id="minicircle" ref={minicircleRef}></div>
       <div id="main">
-        <div className="elem">
-          {/* Your content */}
-        </div>
       </div>
     </div>
   );
