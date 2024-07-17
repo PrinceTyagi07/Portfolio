@@ -13,10 +13,10 @@ function Footer() {
         </div>
         <div className='flex gap-x-5 justify-content-center mt-4'>
             {/* <a className='fw-bold mx-3 fs-5 rounded border px-2 py-1 bg-dark text-light' href='/' target='_blank'><i class="uil uil-facebook"></i></a> */}
-            <a href='https://github.com/PrinceTyagi07' className='fw-bold mx-3 fs-5 rounded border px-2 py-1  text-black' target='_blank'><i class="uil uil-github-alt fa-2x"></i></a>
+            <a href='https://github.com/PrinceTyagi07' className='fw-bold mx-3 fs-9 border rounded  px-2 py-1  text-black' target='_blank'><i class="uil uil-github-alt fa-2x"></i></a>
                     
-            <a className='fw-bold mx-3 fs-5 rounded border px-2 py-1  text-black' href='https://www.instagram.com/prince_tyagi._.07/' target='_blank'><i class="uil uil-instagram-alt"></i></a>
-            <a className='fw-bold mx-3 fs-5 rounded border px-2 py-1  text-black'  href='https://www.linkedin.com/in/prince-tyagi-40248325a/' target='_blank'><i class="uil uil-linkedin"></i></a>
+            <a className='fw-bold mx-3 fs-3 border rounded  px-2 py-1   text-black' href='https://www.instagram.com/prince_tyagi._.07/' target='_blank'><i class="uil uil-instagram-alt"></i></a>
+            <a className='fw-bold mx-3 fs-3 border rounded  px-2 py-1  text-black'  href='https://www.linkedin.com/in/prince-tyagi-40248325a/' target='_blank'><i class="uil uil-linkedin"></i></a>
 
         </div>
 

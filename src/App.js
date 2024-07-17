@@ -25,8 +25,8 @@ function App() {
   }, []);
   return (
     <>
-      <Header/>
        <MouseFollower />
+      <Header/>
       <main className='main'>
         <Homeintro/>
         <About/>

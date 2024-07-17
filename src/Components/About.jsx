@@ -21,23 +21,23 @@ function About() {
 
             <Col lg={6} md={12} sm={12} className='d-flex flex-column'>
                 <div className='skillsdiv'>
-                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
+                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="900">
                         <i class="uil uil-award fa-2x"></i>
                         <p className='fw-bold'>Experience</p>
                         <p className='fw-bold'>1 + Years</p>
                     </div>
-                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
+                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="900">
                         <i class="uil uil-bag-alt fa-2x"></i>
                         <p className='fw-bold'>Completed</p>
                         <p className='fw-bold'>20 + Projects</p>
                     </div>
-                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
+                    <div className='features m-3 px-4 text-center shadow' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="900">
                         <i class="uil uil-headphones-alt fa-2x"></i>
                         <p className='fw-bold'>Support</p>
                         <p className='fw-bold'>Online 24/7</p>
                     </div>
                 </div>
-                <div className='my-5 mx-3 font-fam' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
+                <div className='my-5 mx-3 font-fam' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="900">
                   <span className='fw-bold'>*</span> I have a total of 1.5 years of experience in Front End Technologies - React JS.
                    I have also completed a Full Stack Developer course (MERN Stack) from GreatLearning. <br />
                    <span className='fw-bold'>*</span> I have completed more than 20 projects in Web application development.I have worked on the implementation of
@@ -48,13 +48,13 @@ function About() {
                   <span className='fw-bold'></span>
                 </div>
 
-                <div className='flex items-center justify-center' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="2500">
+                <div className='flex items-center justify-center' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="900">
 
                     <a href='/files/updated_cv.pdf' download><button onClick={handleDownload} className='btn btn-dark downloadcv-btn'>Download CV</button></a>
                 </div>
             </Col>
 
-            <Col lg={6} md={12} sm={12} className='profileImagesection' data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2500">
+            <Col lg={6} md={12} sm={12} className='profileImagesection' data-aos="fade-right" data-aos-easing="linear" data-aos-duration="900">
             <div className="overflow-hidden rounded-lg">
 
               <img className='profileImage scale-75 ' src="/images/profileimg2.png" alt="profile image" />

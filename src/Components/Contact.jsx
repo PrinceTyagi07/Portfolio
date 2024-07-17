@@ -37,7 +37,7 @@ function Contact() {
 
         <Row className='d-flex justify-content-center mx-5'>
           
-            <Col lg={6} md={12} sm={12} className='flex-property' data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
+            <Col lg={6} md={12} sm={12} className='flex-property' data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1300">
       <h3 className='text-dark fs-4'>Talk to me</h3>
               
                 <div className='write-section rounded shadow'>
@@ -49,7 +49,7 @@ function Contact() {
 
             </Col>
 
-            <Col lg={6} md={12} sm={12} className='flex-column margintop-2' data-aos="fade-in" data-aos-easing="linear" data-aos-duration="2000">
+            <Col lg={6} md={12} sm={12} className='flex-column margintop-2' data-aos="fade-in" data-aos-easing="linear" data-aos-duration="1300">
                 <h3 className='text-dark fs-4'>Write me your Project</h3>
                 <Form ref={form} onSubmit={sendMessage}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -71,7 +71,7 @@ function Contact() {
             </Col>
         </Row>
       {/* </div> */}
-      <ToastContainer position='top-right' theme='colored' autoClose='2000'/>
+      <ToastContainer position='top-right' theme='colored' autoClose='3000'/>
     </section>
   )
 }
