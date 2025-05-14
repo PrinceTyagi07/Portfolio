@@ -15,7 +15,7 @@ import './App.css'
 import MouseFollower from './Components/MouseFollower';
 
 function App() {
-  useEffect(() => {
+  useEffect(() => { 
     AOS.init({
       duration: 2500,
       offset: 100,
